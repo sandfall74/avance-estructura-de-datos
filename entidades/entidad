@@ -1,0 +1,53 @@
+package entidades;
+
+public class entidad{
+    private double daño;
+    private String tipo;
+    private String fortaleza;
+    private String debilidad;
+
+    public entidad(){
+        this.daño=0;
+        this.tipo="";
+        this.fortaleza="";
+        this.debilidad="";
+    }
+    public double getDaño() {
+        return daño;
+    }
+
+    public void setDaño(double daño) {
+        this.daño = daño;
+    }
+
+    public String getFortaleza() {
+        return fortaleza;
+    }
+
+    public void setFortaleza(String fortaleza) {
+        this.fortaleza = fortaleza;
+    }
+
+    public String getDebilidad() {
+        return debilidad;
+    }
+    public void setTipo(String tipo){
+        this.tipo=tipo;
+        
+    }
+    public String getTipo(){
+        return tipo;
+    }
+
+    public void setDebilidad(String debilidad) {
+        this.debilidad = debilidad;
+    }
+    public void multiplicadorDeDañoSegunFortalezaODEbilidad(String tipo){
+        if(tipo==fortaleza){
+            daño=daño*2;
+        }else if(tipo==debilidad){
+            daño=daño/2;
+        }
+    }
+     
+}
