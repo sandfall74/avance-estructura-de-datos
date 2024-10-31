@@ -1,4 +1,34 @@
 package jugadores; 
 private int puntosVidaCastillo ; 
-private int poderAtaque; 
+private String tipoTropa; 
 private int puntosMejora; 
+
+
+public Jugador(int puntosVidaCastillo, String tipoTropa, int puntosMejora) {
+    this.puntosVidaCastillo = puntosVidaCastillo;
+    this.tipoTropa = tipoTropa;
+    this.puntosMejora = puntosMejora;
+}
+public int getPuntosVidaCastillo() {
+        return puntosVidaCastillo;
+    }
+
+    public void setPuntosVidaCastillo(int puntosVidaCastillo) {
+        this.puntosVidaCastillo = puntosVidaCastillo;
+    }
+
+    public String getTipoTropa() {
+        return tipoTropa;
+    }
+
+    public void setTipoTropa(String tipoTropa) {
+        this.tipoTropa = tipoTropa;
+    }
+
+    public int getPuntosMejora() {
+        return puntosMejora;
+    }
+
+    public void setPuntosMejora(int puntosMejora) {
+        this.puntosMejora = puntosMejora;
+    }
