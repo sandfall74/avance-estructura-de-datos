@@ -1,1 +1,49 @@
+package jugadores;
 
+import java.util.Random;
+
+public class CPU {
+    private int puntosVidaCastillo;
+    private String tipoTropa;
+    private int puntosMejora;
+    private Random random;
+
+    public CPU(int puntosVidaCastillo, String tipoTropa, int puntosMejora) {
+        this.puntosVidaCastillo = puntosVidaCastillo;
+        this.tipoTropa = tipoTropa;
+        this.puntosMejora = puntosMejora;
+        this.random = new Random();
+    }
+
+    public int getPuntosVidaCastillo() {
+        return puntosVidaCastillo;
+    }
+
+    public void setPuntosVidaCastillo(int puntosVidaCastillo) {
+        this.puntosVidaCastillo = puntosVidaCastillo;
+    }
+
+    public String getTipoTropa() {
+        return tipoTropa;
+    }
+
+    public void setTipoTropa(String tipoTropa) {
+        this.tipoTropa = tipoTropa;
+    }
+
+    public int getPuntosMejora() {
+        return puntosMejora;
+    }
+
+    public void setPuntosMejora(int puntosMejora) {
+        this.puntosMejora = puntosMejora;
+    }
+
+    public String elegirTropaAleatoria() {
+        // tipos de tropas disponibles
+        String[] tiposTropas = {"Arquero", "Mago", "Caballero"};
+        return tiposTropas[random.nextInt(tiposTropas.length)];
+    }
+
+   
+}
