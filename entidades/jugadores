@@ -32,3 +32,7 @@ public int getPuntosVidaCastillo() {
     public void setPuntosMejora(int puntosMejora) {
         this.puntosMejora = puntosMejora;
     }
+ 
+public void incrementarTropasDisponibles(int ronda) {
+        tropasDisponibles = ronda + 1;
+    }
