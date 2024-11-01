@@ -1,5 +1,0 @@
-//Jugador
-private int puntosVidaCastillo ; 
-private int poderAtaque; 
-private int puntosMejora; 
- 
